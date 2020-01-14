@@ -8,5 +8,5 @@ Feature: Login Feature
     Then Show the correct expect "<message>" message
 
     Examples: 
-      | userame            | password                 | message  |
+      | username            | password                 | message  |
       | chungkh@stengg.com | Kr4d/vgDUkIxPYyzw6Q/3g== | Sign Out |

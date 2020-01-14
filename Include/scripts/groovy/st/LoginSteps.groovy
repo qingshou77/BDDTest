@@ -49,20 +49,20 @@ class LoginSteps {
 	def I_go_to_login_page() {
 		//Action go to the login page
 		WebUI.openBrowser('')
-		
+
 		WebUI.navigateToUrl('https://www.katalon.com/')
-		
+
 		WebUI.click(findTestObject('Object Repository/Page_Katalon  Simplify Web API Mobile Deskt_8a6745/a_Sign In'))
-		
+
 	}
 
 	@When('I enter the correct "(.*)" username and "(.*)" password')
 	def I_enter_user_password(String user, String password) {
-		//Input usernam and password
+		//Input username and password
 		WebUI.setText(findTestObject('Object Repository/Page_Sign in  Katalon Solution/input_Sign in to Katalon_user_email'), user)
 
-		WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign in  Katalon Solution/input_Sign in to Katalon_user_pass'), 
-			password)
+		WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign in  Katalon Solution/input_Sign in to Katalon_user_pass'),
+				password)
 
 		WebUI.click(findTestObject('Object Repository/Page_Sign in  Katalon Solution/input_Remember me_login-btn'))
 	}
