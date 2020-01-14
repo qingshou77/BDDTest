@@ -24,8 +24,6 @@ WebUI.click(findTestObject('Page_Katalon  Simplify Web API Mobile Deskt_8a6745/a
 
 WebUI.click(findTestObject('Object Repository/Page_Sign in  Katalon Solution/a_Forgot your password'))
 
-WebUI.click(findTestObject('Object Repository/Page_Sign in  Katalon Solution/div_Reset password                    Pleas_3beb58'))
-
 WebUI.setText(findTestObject('Object Repository/Page_Sign in  Katalon Solution/input_Please enter the registered emailWe w_9c95c7'), 
     'kingge77@yahoo.com.sg')
 

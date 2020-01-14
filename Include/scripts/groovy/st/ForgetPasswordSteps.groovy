@@ -54,14 +54,12 @@ class ForgetPasswordSteps {
 		WebUI.click(findTestObject('Page_Katalon  Simplify Web API Mobile Deskt_8a6745/a_Sign In'))
 
 		WebUI.click(findTestObject('Object Repository/Page_Sign in  Katalon Solution/a_Forgot your password'))
-
-		WebUI.click(findTestObject('Object Repository/Page_Sign in  Katalon Solution/div_Reset password                    Pleas_3beb58'))
 	}
 
 	@When('I enter my email address "(.*)" and submit')
 	def I_enter_my_email_adress(String emailaddress) {
-		WebUI.setText(findTestObject('Object Repository/Page_Sign in  Katalon Solution/input_Please enter the registered emailWe w_9c95c7'), 
-			emailaddress)
+		WebUI.setText(findTestObject('Object Repository/Page_Sign in  Katalon Solution/input_Please enter the registered emailWe w_9c95c7'),
+				emailaddress)
 
 		WebUI.click(findTestObject('Object Repository/Page_Sign in  Katalon Solution/input_Please enter the registered emailWe w_b8d9ae'))
 	}
